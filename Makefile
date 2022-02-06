@@ -1,7 +1,7 @@
 DWM_SRC = dwm/transient.c dwm/config.h dwm/util.c dwm/drw.h dwm/drw.c dwm/dwm.c
 
-.PHONY: default
-default: dwm/dwm
+.PHONY: dwm
+dwm: dwm/dwm
 
 dwm/dwm: $(DWM_SRC)
 	make -C ./dwm && echo "DWM built! Now 'make install && make configs' and you will be good to go."
@@ -10,7 +10,7 @@ dwm/dwm: $(DWM_SRC)
 install: dwm/dwm
 	sudo make -C ./dwm install
 
-.PHONY: configs 
+.PHONY: configs
 configs:
 	mkdir -p $(HOME)/.local/share/dwm
 
