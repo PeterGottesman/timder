@@ -1,0 +1,39 @@
+#
+# wm independent hotkeys
+#
+
+# emacs client
+super + c
+      emacsclient -c
+
+# terminal emulator
+super + Return
+	urxvt256c
+
+# program launcher
+super + space
+	rofi -show drun
+
+# rofi-pass
+super + ctrl + {_,shift +}p
+      rofi-pass {_,--insert}
+
+# Screen shot w/ selection
+# for why there is a sleep:
+# https://bbs.archlinux.org/viewtopic.php?id=86507
+# super + ctrl + s
+#       sleep 0.2; scrot -s
+
+# Screen shot entire screen
+# super + ctrl + shift + s
+#       scrot
+
+XF86MonBrightnessDown
+	brightnessctl s 15%-
+
+XF86MonBrightnessUp
+	brightnessctl s 15%+
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
