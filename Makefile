@@ -9,6 +9,7 @@ dwm/dwm: $(DWM_SRC)
 .PHONY: install
 install: dwm/dwm
 	sudo make -C ./dwm install
+	sudo cp dwm.desktop /usr/share/xsessions
 
 .PHONY: configs
 configs:
