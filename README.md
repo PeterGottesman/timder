@@ -5,6 +5,7 @@ I hope you like it
 ## Requirements
 - XLib headers - for compiling DWM
 - sxhkd - used for keybindings
+- acpi - used for displaying battery info in top bar
 - rofi and rofi-pass - optional, but used in the configs
 
 I use this alongside my dotfiles, available at https://github.com/PeterGottesman/.dotfiles .
