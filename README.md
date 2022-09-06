@@ -6,7 +6,10 @@ I hope you like it
 - XLib headers - for compiling DWM
 - sxhkd - used for keybindings
 - acpi - used for displaying battery info in top bar
-- rofi and rofi-pass - optional, but used in the configs
+
+Optional requirements:
+- rofi and rofi-pass - used as a launcher and for password management
+- playerctl - adds play/pause keybinds
 
 I use this alongside my dotfiles, available at https://github.com/PeterGottesman/.dotfiles .
 
