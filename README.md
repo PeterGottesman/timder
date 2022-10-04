@@ -16,7 +16,7 @@ I use this alongside my dotfiles, available at https://github.com/PeterGottesman
 ## Usage
 First, ensure you have the `dwm` submodule checked out. You can do this when cloning with:
 ```
-git clone https://github.com/PeterGottesman/timder.git --recurse-submodues
+git clone https://github.com/PeterGottesman/timder.git --recurse-submodules
 ```
 
 If you already cloned, you can also initialize the submodules with:
